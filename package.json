@@ -1,0 +1,32 @@
+{
+  "name": "la-vie-app",
+  "version": "1.0.0",
+  "description": "Desafio Gama Academy (Clínica La Vie - Saúde Mental)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src",
+    "start": "tsx src/server.ts",
+    "start:dev": "tsx watch src/server.ts",
+    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "express-validation": "^4.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.4.0",
+    "sequelize": "^6.32.1",
+    "tsup": "^7.0.0",
+    "zod": "^3.21.4"
+  }
+}
