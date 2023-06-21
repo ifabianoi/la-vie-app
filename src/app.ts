@@ -1,5 +1,6 @@
 import express from 'express';
-import { routes } from './routes';
+
+import { routes } from './routes/index.js';
 
 export class App {
   public server: express.Application;
@@ -15,6 +16,6 @@ export class App {
   }
 
   public router() {
-    this.server.use(routes)
+    this.server.use(routes);
   }
 }
